@@ -1,43 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ByFuns</title>
-        <style>
-    body {
-      background-image: url("bg.png");
-      background-repeat: no-repeat;
-      background-size: cover;
+
+<head>
+  <script>
+    function redirectBasedOnLanguage() {
+      var userLanguage = navigator.language || navigator.userLanguage;
+
+      if (userLanguage.startsWith('zh')) {
+        window.location.href = 'zh-cn/';
+      } else {
+        window.location.href = 'en/';
+      }
     }
-  </style>
-        <style>
-   .roundButton {
-      border-radius: 20px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      cursor: pointer;
-      border: none;
-      display: block;
-      margin: 0 auto;
-   </style>
-    </head>
-    <body>
-        <style>
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
-        <h1>Who Am I?</h1>
-        <p>Explore Byfun, you'll know the truth.</p>
-        <h1>Contact Me</h1>
-        <p>Email: <span>2564233286@qq.com</span></p>
-        <h1>My Project</h1>
-        <ul>
-            <li>Secret</li>
-            <li>……</li>
-            <li>……</li> <button class="roundButton" onclick="window.location.href='https://github.com/byfuns'">My Github</button>
-        </ul>
-    </body>
+
+    window.onload = redirectBasedOnLanguage;
+  </script>
+</head>
+
+<body>
+
+</body>
+
 </html>
