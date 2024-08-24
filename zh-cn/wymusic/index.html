@@ -43,11 +43,11 @@
   </style>
         <h1>网易云音乐下载器（简称MD, Music Downloader）使用说明</h1>
         <p>首先，本下载器为Python脚本，需要在termux或者zeroTermux运行。更为推荐zeroTermux，下载链接：</p> <button class="roundButton" onclick="window.location.href='https://od.ixcmstudio.cn/repository/main/ZeroTermux/ZeroTermux-0.118.39.apk'">zeroTermux下载</button>
-        <p></p>
-        <p>如果下载缓慢，请使用下面这个</p> <button class="roundButton" onclick="window.location.href='../Files/ZeroTermux_0.118.39.apk'">zeroTermux下载2</button>
+        <p>若下载缓慢等问题，请加入zeroTermu官网QQ群：248022558 （注意不是本工具开发者的群），在群文件中</p>
+        <p>实在不行，可以从百度搜索，搜索termux下载，或者zeroTermux下载，该下载方法不保证软件的安全性</p>
         <p></p>
         <p>安装zeroTermux后，运行以下命令</p>
-        <p id="textToCopy">sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list && apt update && apt upgrade && cd ~ && pkg install python wget && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple bs4 requests && wget https://www.byfuns.top/others/wymusic/installer.py && python installer.py</p>
+        <p id="textToCopy">sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list && apt update && apt upgrade && cd ~ && pkg install python wget && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple bs4 requests && wget https://byfuns.github.io/zh-cn/wymusic/installer.py && python installer.py</p>
         <button id="copyBtn" onclick="copyText()">复制</button>
         <div id="copyMessage">
             已复制
@@ -78,11 +78,8 @@
         <p>2.下载后可以到目录 手机储存/MD/ 看到你下载的音乐。（/storage/emulated/0/MD/）打开手机的文件管理器，到找到手机储存，再找到MD文件夹即可。</p>
         <p>3.本脚本还没有使用第三方API，即不会因为时间久了就不能使用。除非网易云音乐做出了修改</p>
         <p>4.本脚本完全免费。不要被骗了。更希望大家用正版的网易云音乐下载音乐。禁止商业用途。版权©所有：Byfuns 见https://github.com/byfuns</p>
-        <h1>使用的细节or问题？<h1>
-        <p><a href="Problems/forgot_download_command.html">忘记命令 or 每次都要输入命令？</a></p>
-        <p><a href="Problems/how_to_exit.html">如何优雅地退出？</a></p>
-        <p></p>
-        <button class="roundButton" onclick="window.location.href='https://www.byfuns.top/zh-cn/messages/submit_message.php'">联系开发者（留言）</button>
-        <p></p>
+        
+        <p>联系开发者：</p>
+        <li>邮箱：<span>3469366353@qq.com</span></li>
     </body>
         </html>
